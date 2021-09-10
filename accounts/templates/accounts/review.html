@@ -1,0 +1,49 @@
+{% extends 'accounts/main.html' %}
+
+{% load static %}
+
+{% block content %}
+{% include 'accounts/navbar-home.html' %}
+
+    <div class="reviewblock">
+        <div class="img">
+            <img src="{{animes.anime_img.url}}" alt="">
+            <h1>Ratings:</h1>
+            <h2>{{ review_avg.rate__avg | floatformat:2 }}/5</h2>
+        </div>
+        <div class="contents">      
+            <div class="plot">
+                <h1>{{animes.anime_name}}</h1>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{animes.anime_plot}}</h4>
+            </div>
+            
+            <div class="form">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="rate">
+                        <label for="rate">Rate</label>
+                        {{ form.rate }}
+                    </div>
+                    <div class="comment">
+                        <label for="">Opinion</label>
+                        {{ form.text }}
+                    </div>
+                    <input type="submit" value="Review" id="review">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="opinions">
+        <h1>Comments and Opinions</h1>
+        {% for rate in reviews %}
+            <div class="comments">
+                <h2>{{rate.user.first_name}}</h2>
+                <h4>{{rate.text}}</h4>
+                
+            </div>
+        {% endfor %}
+        
+    </div>
+
+{% endblock %}

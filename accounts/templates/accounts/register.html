@@ -1,0 +1,53 @@
+{% extends 'accounts/main.html' %}
+
+
+{% block content %}
+
+<div class="registration">
+    <div class="container">
+        <h1>re-anime</h1>
+    </div>
+
+    <form class="rgs" method="POST">
+
+        {% csrf_token %}
+
+        <div class="name">
+            <div class="fname">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname">
+            </div>
+            <div class="lname">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname">
+            </div>
+        </div>
+        <div class="email">
+            <label for="email" class="lbl">Email</label>
+            <input type="email" name="email" id="">
+        </div>
+        <div class="uname">
+            <label for="user">Username</label>
+            <input type="text" name="username" id="">
+        </div>
+        <div class="pass">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="">
+        </div>
+        <input type="submit" name="Register" id="register">
+
+        
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %}
+        {% endif %}
+
+
+    </form>
+
+<a id="back" href="/login">Back to Login Page</a>
+</div>
+
+
+{% endblock %}

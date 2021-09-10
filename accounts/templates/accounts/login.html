@@ -1,0 +1,35 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="loginbox">
+    <h1>re-anime</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="username">
+            <img src="{% static 'images/user-icon.png' %}" alt="">
+            <input type="text" name="username" id="" placeholder="Username" required>
+        </div>
+        <div class="password">
+            
+            <img src="{% static 'images/password-icon.png' %}" alt="">
+            <input type="password" name="password" id="" placeholder="Password" required>
+        </div>
+        <input type="submit" value="LOGIN">
+
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %}
+        {% endif %}
+
+    </form>
+
+    
+
+    <a href="/register">Create an Account</a>
+</div>
+
+{% endblock %}

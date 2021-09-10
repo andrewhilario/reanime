@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.feed{
+    position: relative !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-around !important;
+}
+.r_feed{
+    display: block !important;
+}
+.r_feed hr{
+    width: 78% !important;
+}
+.anime-feed{
+    width: 70% !important;
+    margin-left: 5% !important;
+    margin-top: 3% !important;
+    display: flex !important;
+}
+
+.anime-feed img{
+    width: 250px !important;
+    height: 350px !important;
+    margin: 2rem !important;
+}
+.sypnosis{
+    color: white !important;
+    font-family: "DM Sans" !important;
+    margin-bottom: 20px !important;
+    align-self: center !important;
+}
+.sypnosis a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer !important;
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+}
+.sypnosis a:hover{
+    color: rgb(255, 255, 97) !important;
+    transition: all .5s ease-in !important;
+}
+.sypnosis h4{
+    margin-top: 20px !important;
+    font-size: 1.1rem !important;
+}
+
+.top_animes{
+    position: absolute;
+    background-color: rgba(235, 84, 73, 1) !important;
+    height:500px !important;
+    margin-right: 4.5rem !important;
+    color: white !important;
+    margin: 1rem auto !important;
+    border-radius: 20px !important;
+    right: 4rem !important;
+    top: 4rem !important;
+}
+.top_animes h1{
+    color: white !important;
+    font-family: 'DM Sans' !important;
+    font-size: 2rem !important;
+    margin: 1rem auto !important;
+    text-align: center !important;
+    
+}
+.top_animes ul li{
+    width: 80% !important;
+    font-family: 'DM Sans' !important;
+    font-size: 1rem !important;
+    margin-top: 1rem !important;
+    margin-left: 3rem !important;
+    color: white !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+.top_animes ul li a{
+    text-decoration: none;
+    color: white;
+}
+.top_animes ul li:hover{
+    color: rgb(255, 253, 121) !important;
+    transition: all .4s ease !important;
+}

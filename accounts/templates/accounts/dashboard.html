@@ -1,0 +1,30 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'accounts/navbar.html' %}
+
+
+<div class="title">
+    <h1>Anime Show Review Website just for You!</h1>
+    <h4>This website is for the anime lovers who wants to know more about the anime, where you can find summary and review of the blogger by rating some of the qualifying criterias for entertaining shows. Yes, you can also rate the review itself!</h4>
+
+</div>
+
+<div class="anime">
+    
+    <ul>
+        {% for animes in anime %}
+        <li>
+            <div class="aniblocks">
+                <img class="pics" src="{{animes.anime_img.url}}" alt="">
+                <a href="/review/{{animes.id}}">{{animes.anime_name}}</a>
+                <h3>4.5/5 Stars</h3>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    
+</div>
+
+{% endblock %}

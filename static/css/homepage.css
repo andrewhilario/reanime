@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.home{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.anime_cont{
+    padding-top: 3rem !important;
+    padding-left: 4rem !important;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.anime_rev{
+    color: white;
+    width: 25%;
+    margin-top: 1.4rem !important;
+    text-align: center;
+    font-family: 'DM Sans';
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.anime_rev a{
+    margin-top: 1rem !important;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.anime_rev img{
+    width:250px;
+    height: 350px;
+    align-self: center;
+}
+.anime_rev h3{
+    margin-top: 1rem !important;
+    font-size: 1rem;
+}
+/* Sidebar */
+.top_anime{
+    background-color: rgba(235, 84, 73, 1);
+    height:55%;
+    width: 15%;
+    margin-top: 8rem !important;
+    margin-right: 4.5rem !important;
+    color: white;
+    margin: 1rem auto !important;
+    align-self:center;
+    border-radius: 20px;
+}
+.top_anime h1{
+    color: white;
+    font-family: 'DM Sans';
+    font-size: 2rem !important;
+    margin: 1rem auto !important;
+    text-align: center;
+}
+.top_anime ul li{
+    width: 80%;
+    font-family: 'DM Sans';
+    font-size: 1rem;
+    margin-top: 1rem !important;
+    margin-left: 3rem !important;
+    color: white;
+}
+.top_anime ul li a:hover{
+    color: rgb(255, 253, 121);
+    transition: all .4s ease;
+}
+.top_anime ul li a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100% !important;
+    background-color: rgba(235, 84, 73, 1) !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 12vh !important;
+}
+
+.logo{
+    font-family: 'Advent Pro' !important;
+    margin-left: 20px !important;
+    font-size: 4rem !important;
+    cursor: pointer !important;
+}
+.logo a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.navLinks{
+    width: 20% !important;
+}
+
+.navLinks ul{
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+.navLinks ul li{
+    text-align: center !important;
+    list-style: none !important;
+}
+.navLinks ul li a{
+    font-family: "DM Sans" !important;
+    font-size: 1.3rem;
+    text-decoration: none !important;
+    color: white !important;
+}
+.search-bar{
+    position: relative !important;
+    
+}
+.search-bar form{
+    display: flex;
+    justify-content: space-around;
+}
+.search-bar label{
+    display: none;
+}
+.search-bar input[type='text']{
+    width: 450px !important;
+    height: 4vh !important;
+    border:none !important;
+    border-radius: 20px !important;
+    outline: none !important;
+    padding-left: 3rem !important;
+    font-size: 1.4rem!important;
+    background-color: antiquewhite !important;
+}
+.search-bar input[type='submit']{
+    display: block;
+    width: 100px;
+    margin: 0 1rem !important;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "DM Sans" !important;
+    font-size: 1.3rem;
+    background-color: antiquewhite;
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+}
+.search-bar input[type='text']::placeholder{
+    font-family: "DM Sans" !important;
+    font-size: 1.4rem !important;
+    color: rgba(119, 119, 119, 1) !important;
+}
+.search-bar img{
+    position: absolute !important;
+    left: 8px !important;
+    top: 3px !important;
+}
+
+/* Background for Homepage */
+.home{
+    background-image: url('/static/images/home-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}

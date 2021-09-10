@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('/static/images/dashboard-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100% !important;
+    background-color: rgba(235, 84, 73, 1) !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 10vh !important;
+}
+
+.logo{
+    font-family: 'Advent Pro' !important;
+    margin-left: 20px !important;
+    font-size: 4rem !important;
+    cursor: pointer !important;
+}
+.logo a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.links{
+    width: 15% !important;
+    margin-right: 20px !important;
+}
+
+.links ul{
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-around !important;
+}
+.links li{
+    list-style: none !important;
+}
+.links ul li a{
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 1.5rem !important;
+    cursor: pointer !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+.aniblocks{
+    display: flex;
+    flex-direction: column;
+}   
+.aniblocks img{
+    width: 250px !important;
+    height: 350px !important;
+}
+.aniblocks a{
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 1.5rem !important;
+    cursor: pointer !important;
+    color: white !important;
+    text-decoration: none !important;
+    margin: 10px auto !important;
+}
+.aniblocks a:hover{
+    color: rgb(255, 255, 104) !important;
+    transition: all .4s ease !important;
+}
+/* ======================= D A S H B O A R D ========================= */
+.title{
+    width: 100% !important;
+    text-align: center !important;
+    margin: 40px 20px !important;
+}
+.title h1{
+    color: white !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 4rem !important;
+}
+.title h4{
+    color: white !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 1.5rem !important;
+    width: 80% !important;
+    text-align: center !important;
+    margin: 15px auto !important;
+    line-height: 40px !important;
+}
+
+.anime{
+    width: 90% !important;
+    font-family: 'DM Sans', sans-serif !important;
+    margin: 0 auto !important;
+}
+.anime ul{
+    display: flex !important;
+    color: white !important;
+    justify-content: space-around !important;
+}
+.anime ul li{
+    list-style: none !important;
+    text-align: center !important;
+}
+
+.pics:hover{
+    transition: all .4s ease-out !important;
+    transform: scale(1.1) !important;
+}
+#tk{
+    margin: 25px !important;
+}
+

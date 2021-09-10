@@ -1,0 +1,69 @@
+{% extends 'accounts/main.html' %}
+
+{% load static %}
+
+{% block content %}
+    {% include 'accounts/navbar-profile.html' %}
+
+
+    <div class="profile" id="prof">
+        <div class="btn">
+            <input type="button" value="EDIT" id="edit">
+        </div>
+        <div class="prof-pic">
+            <img src="{{ user.profile.image.url }}" alt="">
+        </div>
+        <div class="user-info" id="user-info">
+
+            <div class="prof-cred" id="prof-cred">
+                <div class="prof-fname">
+                    <h2>{{user.first_name}} {{user.last_name}}</h2>
+                </div>
+                <div class="prof-email">
+                    <h3>{{user.email}}</h3>
+                </div>
+            </div>
+        </div>
+        <form method="POST" enctype="multipart/form-data" class="edit-info" id="edit-info">
+            {% csrf_token %}
+            <!-- <label for="file-input" class="file-upload">
+                Upload your Profile
+            </label>
+            <input type="file" name="image" id="file-input" accept="image/x-png,image/jpeg,image/jpg"/>
+             -->
+            <div class="full-name">
+                <div class="fname">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname">
+                </div>
+                <div class="lname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname">
+                </div>
+            </div>
+            <div class="emails">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="btns">
+                <input type="submit" value="SAVE">
+                <input type="button" value="CANCEL" id="cancel">
+            </div>
+
+            
+        </form>
+    </div>
+    <div class="review-anime">
+        <h2>Reviewed Anime</h2>
+        <div class="rev-anime">
+            {% for reviews in review %}
+                <div class="contents-review">
+                    <a href="/review/{{reviews.anime.id}}"><img src="{{reviews.anime.anime_img.url}}" alt=""></a>
+                    <a href="/review/{{reviews.anime.id}}">{{reviews.anime.anime_name}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}

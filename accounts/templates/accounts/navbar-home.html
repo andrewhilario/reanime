@@ -1,0 +1,27 @@
+{% load static %}
+<nav>
+    <div class="logo">
+        <a  href="/home">re-anime</a>
+    </div>
+    <div class="search-bar">
+        <form method="POST" action="/search">
+            {% csrf_token %}
+            <input type="text" placeholder="Search Anime Review" name="searched">
+
+
+                <input type="submit" value="Search" id="search">
+
+        </form>
+        <img src="{% static 'images/search-icon.png' %}" alt="">
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <a href="/feed">Anime Feed</a>
+            </li>
+            <li>
+                <a href="/profile">Profile</a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,40 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+    {% include 'accounts/navbar-home.html' %}
+    
+    
+
+    <div class="feed">
+        <div class="r_feed">
+            {% for anime in animes %}
+                <div class="anime-feed">
+                    <img src="{{anime.anime_img.url}}" alt="">
+                    <div class="sypnosis">
+                        <a href="/review/{{animes.id}}">{{anime.id}}.  {{anime.anime_name}}</a>
+                        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{anime.anime_plot}}</h4>
+                    </div>
+                </div>
+            <hr>
+            {% endfor %}
+        </div>
+        
+        <div class="top_animes">
+            <h1>Top Animes</h1>
+            <ul class="anime_names">
+                {% for anime in animes %}
+                    <li>
+                        <a href="/review/{{anime.id}}">
+                        {{anime.anime_name}}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    
+{% endblock %}

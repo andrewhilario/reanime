@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.registration{
+    position: relative;
+    width: 60%;
+    height: 90vh;
+    background-color: rgb(190, 190, 190);
+    margin: 8rem auto !important;
+    border-radius: 30px;
+}
+
+.container{
+    text-align: center;
+    background-image: url('/static/images/login-box-bg.png');
+    width: 100%;
+    height: 30%;
+    font-family: "Advent Pro";
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 30px 30px 0 0 ;
+}
+
+.rgs{
+    width: 60%;
+    margin: 3rem auto !important;
+}
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+}
+.fname{
+    font-family: "DM Sans";
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.lname{
+    font-family: "DM Sans";
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.fname input[type='text']{
+    width: 300px !important;
+    height: 35px;
+    margin-top: 10px !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px  !important;
+    font-family: "DM Sans";
+    font-size: 1rem;
+}
+.lname input[type='text']{
+    width: 300px !important;
+    height: 35px;
+    margin-top: 10px !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px  !important;
+    font-family: "DM Sans";
+    font-size: 1rem;
+}
+.email{
+    margin-top: 20px !important;
+   
+    font-family: "DM Sans";
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+}
+.lbl{
+    margin-left: 0 !important;
+}
+.email input[type='email']{
+    width: 685px !important;
+    height: 35px;
+    margin-top: 10px !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px !important;
+    font-family: "DM Sans";
+    font-size: 1rem;
+}
+.uname{
+    margin-top: 20px !important;
+    font-family: "DM Sans";
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    
+}
+.uname input[type='text']{
+    width: 685px !important;
+    height: 35px;
+    margin-top: 10px !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px  !important;
+    font-family: "DM Sans";
+    font-size: 1rem;   
+    background-color: white;
+}
+.pass{
+    margin-top: 20px !important;
+    font-family: "DM Sans";
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pass input[type='password']{
+    width: 685px;
+    height: 35px;
+    margin-top: 10px !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px  !important;
+    font-family: "DM Sans";
+    font-size: 1rem;   
+}
+#register{
+    display: block;
+    width: 300px;
+    height: 35px;
+    margin: 30px auto !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 8px;
+    font-family: "DM Sans";
+    font-size: 1rem;  
+    
+}
+
+#back{
+    position: absolute !important;
+    bottom: -4vh !important;
+    right: 1vw !important;
+    color: white;
+    font-family: "DM Sans";
+    font-size: 1.2rem;
+
+}
+p{
+    margin-top: 4rem !important;
+    font-size: 1rem;
+    font-family: "DM Sans";
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}

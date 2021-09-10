@@ -1,0 +1,29 @@
+{% extends 'accounts/main.html' %}
+
+{% load static %}
+
+{% block content %}
+    {% include 'accounts/navbar-home.html' %}
+
+    <div class="search">
+        {% if animes %}
+        <h1>You search for {{ animes.anime_name }}</h1>
+        <br>
+            <div class="searched">
+                {% for anime in animes %}
+                <div class="content-anime">
+                    <a href="/review/{{anime.id}}">
+                        <img src="{{anime.anime_img.url}}" alt="">
+                    </a>
+
+                        <a href="/review/{{anime.id}}" class="h2">{{ anime }}</a> <br>
+
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <h1>you forgot to search for a venue</h1>
+        {% endif %}
+    </div>
+
+{% endblock %}
